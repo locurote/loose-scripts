@@ -1,2 +1,1 @@
-just a loose conlection of random scripts for personal use
-
+just a loose collection of random scripts for personal use
