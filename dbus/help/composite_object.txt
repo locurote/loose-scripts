@@ -1,0 +1,588 @@
+Help on <CompositeObject> object:
+
+class <CompositeObject>(org.freedesktop.portal.Inhibit, org.freedesktop.portal.Background, org.freedesktop.portal.Location, org.freedesktop.portal.Notification, org.freedesktop.portal.Screenshot, org.freedesktop.host.portal.Registry, org.freedesktop.portal.Account, org.freedesktop.portal.NetworkMonitor, org.freedesktop.portal.Print, org.freedesktop.portal.Settings, org.freedesktop.portal.GameMode, org.freedesktop.portal.RemoteDesktop, org.freedesktop.portal.MemoryMonitor, org.freedesktop.portal.OpenURI, org.freedesktop.portal.Realtime, org.freedesktop.portal.Secret, org.freedesktop.portal.Clipboard, org.freedesktop.portal.Camera, org.freedesktop.portal.InputCapture, org.freedesktop.portal.GlobalShortcuts, org.freedesktop.portal.PowerProfileMonitor, org.freedesktop.portal.DynamicLauncher, org.freedesktop.portal.ScreenCast, org.freedesktop.portal.Email, org.freedesktop.portal.Trash, org.freedesktop.portal.ProxyResolver, org.freedesktop.portal.FileChooser, org.freedesktop.DBus.Properties, org.freedesktop.DBus.Introspectable, org.freedesktop.DBus.Peer)
+ |  <CompositeObject>(bus, bus_name, path, object=None)
+ |
+ |  Method resolution order:
+ |      <CompositeObject>
+ |      org.freedesktop.portal.Inhibit
+ |      org.freedesktop.portal.Background
+ |      org.freedesktop.portal.Location
+ |      org.freedesktop.portal.Notification
+ |      org.freedesktop.portal.Screenshot
+ |      org.freedesktop.host.portal.Registry
+ |      org.freedesktop.portal.Account
+ |      org.freedesktop.portal.NetworkMonitor
+ |      org.freedesktop.portal.Print
+ |      org.freedesktop.portal.Settings
+ |      org.freedesktop.portal.GameMode
+ |      org.freedesktop.portal.RemoteDesktop
+ |      org.freedesktop.portal.MemoryMonitor
+ |      org.freedesktop.portal.OpenURI
+ |      org.freedesktop.portal.Realtime
+ |      org.freedesktop.portal.Secret
+ |      org.freedesktop.portal.Clipboard
+ |      org.freedesktop.portal.Camera
+ |      org.freedesktop.portal.InputCapture
+ |      org.freedesktop.portal.GlobalShortcuts
+ |      org.freedesktop.portal.PowerProfileMonitor
+ |      org.freedesktop.portal.DynamicLauncher
+ |      org.freedesktop.portal.ScreenCast
+ |      org.freedesktop.portal.Email
+ |      org.freedesktop.portal.Trash
+ |      org.freedesktop.portal.ProxyResolver
+ |      org.freedesktop.portal.FileChooser
+ |      org.freedesktop.DBus.Properties
+ |      org.freedesktop.DBus.Introspectable
+ |      org.freedesktop.DBus.Peer
+ |      pydbus.proxy.ProxyObject
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __getitem__(self, iface) from pydbus.proxy.CompositeInterface.<locals>.CompositeObject
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Inhibit:
+ |
+ |  CreateMonitor(self, window: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  Inhibit(self, window: 's', flags: 'u', options: 'a{sv}', /) -> 'o'
+ |
+ |  QueryEndResponse(self, session_handle: 'o', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.Inhibit:
+ |
+ |  StateChanged
+ |      Signal. Callback: (o, a{sv})
+ |
+ |  onStateChanged
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a{sv})
+ |
+ |  version
+ |      (u) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Background:
+ |
+ |  RequestBackground(self, parent_window: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  SetStatus(self, options: 'a{sv}', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Location:
+ |
+ |  CreateSession(self, options: 'a{sv}', /) -> 'o'
+ |
+ |  Start(self, session_handle: 'o', parent_window: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.Location:
+ |
+ |  LocationUpdated
+ |      Signal. Callback: (o, a{sv})
+ |
+ |  onLocationUpdated
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a{sv})
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Notification:
+ |
+ |  AddNotification(self, id: 's', notification: 'a{sv}', /)
+ |
+ |  RemoveNotification(self, id: 's', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.Notification:
+ |
+ |  ActionInvoked
+ |      Signal. Callback: (s, s, av)
+ |
+ |  SupportedOptions
+ |      (a{sv}) read
+ |
+ |  onActionInvoked
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (s, s, av)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Screenshot:
+ |
+ |  PickColor(self, parent_window: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  Screenshot(self, parent_window: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.host.portal.Registry:
+ |
+ |  Register(self, app_id: 's', options: 'a{sv}', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Account:
+ |
+ |  GetUserInformation(self, window: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.NetworkMonitor:
+ |
+ |  CanReach(self, hostname: 's', port: 'u', /) -> 'b'
+ |
+ |  GetAvailable(self, /) -> 'b'
+ |
+ |  GetConnectivity(self, /) -> 'u'
+ |
+ |  GetMetered(self, /) -> 'b'
+ |
+ |  GetStatus(self, /) -> 'a{sv}'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.NetworkMonitor:
+ |
+ |  changed
+ |      Signal. Callback: ()
+ |
+ |  onchanged
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: ()
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Print:
+ |
+ |  PreparePrint(
+ |      self,
+ |      parent_window: 's',
+ |      title: 's',
+ |      settings: 'a{sv}',
+ |      page_setup: 'a{sv}',
+ |      options: 'a{sv}',
+ |      /
+ |  ) -> 'o'
+ |
+ |  Print(self, parent_window: 's', title: 's', fd: 'h', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Settings:
+ |
+ |  Read(self, namespace: 's', key: 's', /) -> 'v'
+ |
+ |  ReadAll(self, namespaces: 'as', /) -> 'a{sa{sv}}'
+ |
+ |  ReadOne(self, namespace: 's', key: 's', /) -> 'v'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.Settings:
+ |
+ |  SettingChanged
+ |      Signal. Callback: (s, s, v)
+ |
+ |  onSettingChanged
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (s, s, v)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.GameMode:
+ |
+ |  QueryStatus(self, pid: 'i', /) -> 'i'
+ |
+ |  QueryStatusByPIDFd(self, target: 'h', requester: 'h', /) -> 'i'
+ |
+ |  QueryStatusByPid(self, target: 'i', requester: 'i', /) -> 'i'
+ |
+ |  RegisterGame(self, pid: 'i', /) -> 'i'
+ |
+ |  RegisterGameByPIDFd(self, target: 'h', requester: 'h', /) -> 'i'
+ |
+ |  RegisterGameByPid(self, target: 'i', requester: 'i', /) -> 'i'
+ |
+ |  UnregisterGame(self, pid: 'i', /) -> 'i'
+ |
+ |  UnregisterGameByPIDFd(self, target: 'h', requester: 'h', /) -> 'i'
+ |
+ |  UnregisterGameByPid(self, target: 'i', requester: 'i', /) -> 'i'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.GameMode:
+ |
+ |  Active
+ |      (b) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.RemoteDesktop:
+ |
+ |  ConnectToEIS(self, session_handle: 'o', options: 'a{sv}', /) -> 'h'
+ |
+ |  NotifyKeyboardKeycode(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      keycode: 'i',
+ |      state: 'u',
+ |      /
+ |  )
+ |
+ |  NotifyKeyboardKeysym(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      keysym: 'i',
+ |      state: 'u',
+ |      /
+ |  )
+ |
+ |  NotifyPointerAxis(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      dx: 'd',
+ |      dy: 'd',
+ |      /
+ |  )
+ |
+ |  NotifyPointerAxisDiscrete(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      axis: 'u',
+ |      steps: 'i',
+ |      /
+ |  )
+ |
+ |  NotifyPointerButton(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      button: 'i',
+ |      state: 'u',
+ |      /
+ |  )
+ |
+ |  NotifyPointerMotion(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      dx: 'd',
+ |      dy: 'd',
+ |      /
+ |  )
+ |
+ |  NotifyPointerMotionAbsolute(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      stream: 'u',
+ |      x: 'd',
+ |      y: 'd',
+ |      /
+ |  )
+ |
+ |  NotifyTouchDown(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      stream: 'u',
+ |      slot: 'u',
+ |      x: 'd',
+ |      y: 'd',
+ |      /
+ |  )
+ |
+ |  NotifyTouchMotion(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      stream: 'u',
+ |      slot: 'u',
+ |      x: 'd',
+ |      y: 'd',
+ |      /
+ |  )
+ |
+ |  NotifyTouchUp(self, session_handle: 'o', options: 'a{sv}', slot: 'u', /)
+ |
+ |  SelectDevices(self, session_handle: 'o', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.RemoteDesktop:
+ |
+ |  AvailableDeviceTypes
+ |      (u) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.MemoryMonitor:
+ |
+ |  LowMemoryWarning
+ |      Signal. Callback: (y)
+ |
+ |  onLowMemoryWarning
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (y)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.OpenURI:
+ |
+ |  OpenDirectory(self, parent_window: 's', fd: 'h', options: 'a{sv}', /) -> 'o'
+ |
+ |  OpenFile(self, parent_window: 's', fd: 'h', options: 'a{sv}', /) -> 'o'
+ |
+ |  OpenURI(self, parent_window: 's', uri: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  SchemeSupported(self, scheme: 's', options: 'a{sv}', /) -> 'b'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Realtime:
+ |
+ |  MakeThreadHighPriorityWithPID(self, process: 't', thread: 't', priority: 'i', /)
+ |
+ |  MakeThreadRealtimeWithPID(self, process: 't', thread: 't', priority: 'u', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.Realtime:
+ |
+ |  MaxRealtimePriority
+ |      (i) read
+ |
+ |  MinNiceLevel
+ |      (i) read
+ |
+ |  RTTimeUSecMax
+ |      (x) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Secret:
+ |
+ |  RetrieveSecret(self, fd: 'h', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Clipboard:
+ |
+ |  RequestClipboard(self, session_handle: 'o', options: 'a{sv}', /)
+ |
+ |  SelectionRead(self, session_handle: 'o', mime_type: 's', /) -> 'h'
+ |
+ |  SelectionWrite(self, session_handle: 'o', serial: 'u', /) -> 'h'
+ |
+ |  SelectionWriteDone(self, session_handle: 'o', serial: 'u', success: 'b', /)
+ |
+ |  SetSelection(self, session_handle: 'o', options: 'a{sv}', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.Clipboard:
+ |
+ |  SelectionOwnerChanged
+ |      Signal. Callback: (o, a{sv})
+ |
+ |  SelectionTransfer
+ |      Signal. Callback: (o, s, u)
+ |
+ |  onSelectionOwnerChanged
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a{sv})
+ |
+ |  onSelectionTransfer
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, s, u)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Camera:
+ |
+ |  AccessCamera(self, options: 'a{sv}', /) -> 'o'
+ |
+ |  OpenPipeWireRemote(self, options: 'a{sv}', /) -> 'h'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.Camera:
+ |
+ |  IsCameraPresent
+ |      (b) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.InputCapture:
+ |
+ |  Disable(self, session_handle: 'o', options: 'a{sv}', /)
+ |
+ |  Enable(self, session_handle: 'o', options: 'a{sv}', /)
+ |
+ |  GetZones(self, session_handle: 'o', options: 'a{sv}', /) -> 'o'
+ |
+ |  Release(self, session_handle: 'o', options: 'a{sv}', /)
+ |
+ |  SetPointerBarriers(
+ |      self,
+ |      session_handle: 'o',
+ |      options: 'a{sv}',
+ |      barriers: 'aa{sv}',
+ |      zone_set: 'u',
+ |      /
+ |  ) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.InputCapture:
+ |
+ |  Activated
+ |      Signal. Callback: (o, a{sv})
+ |
+ |  Deactivated
+ |      Signal. Callback: (o, a{sv})
+ |
+ |  Disabled
+ |      Signal. Callback: (o, a{sv})
+ |
+ |  SupportedCapabilities
+ |      (u) read
+ |
+ |  ZonesChanged
+ |      Signal. Callback: (o, a{sv})
+ |
+ |  onActivated
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a{sv})
+ |
+ |  onDeactivated
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a{sv})
+ |
+ |  onDisabled
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a{sv})
+ |
+ |  onZonesChanged
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a{sv})
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.GlobalShortcuts:
+ |
+ |  BindShortcuts(
+ |      self,
+ |      session_handle: 'o',
+ |      shortcuts: 'a(sa{sv})',
+ |      parent_window: 's',
+ |      options: 'a{sv}',
+ |      /
+ |  ) -> 'o'
+ |
+ |  ListShortcuts(self, session_handle: 'o', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.GlobalShortcuts:
+ |
+ |  ShortcutsChanged
+ |      Signal. Callback: (o, a(sa{sv}))
+ |
+ |  onShortcutsChanged
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (o, a(sa{sv}))
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.PowerProfileMonitor:
+ |
+ |  power-saver-enabled
+ |      (b) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.DynamicLauncher:
+ |
+ |  GetDesktopEntry(self, desktop_file_id: 's', /) -> 's'
+ |
+ |  GetIcon(self, desktop_file_id: 's', /) -> '(v, s, u)'
+ |
+ |  Install(
+ |      self,
+ |      token: 's',
+ |      desktop_file_id: 's',
+ |      desktop_entry: 's',
+ |      options: 'a{sv}',
+ |      /
+ |  )
+ |
+ |  Launch(self, desktop_file_id: 's', options: 'a{sv}', /)
+ |
+ |  PrepareInstall(
+ |      self,
+ |      parent_window: 's',
+ |      name: 's',
+ |      icon_v: 'v',
+ |      options: 'a{sv}',
+ |      /
+ |  ) -> 'o'
+ |
+ |  RequestInstallToken(self, name: 's', icon_v: 'v', options: 'a{sv}', /) -> 's'
+ |
+ |  Uninstall(self, desktop_file_id: 's', options: 'a{sv}', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.DynamicLauncher:
+ |
+ |  SupportedLauncherTypes
+ |      (u) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.ScreenCast:
+ |
+ |  SelectSources(self, session_handle: 'o', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.portal.ScreenCast:
+ |
+ |  AvailableCursorModes
+ |      (u) read
+ |
+ |  AvailableSourceTypes
+ |      (u) read
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Email:
+ |
+ |  ComposeEmail(self, parent_window: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.Trash:
+ |
+ |  TrashFile(self, fd: 'h', /) -> 'u'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.ProxyResolver:
+ |
+ |  Lookup(self, uri: 's', /) -> 'as'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.portal.FileChooser:
+ |
+ |  SaveFile(self, parent_window: 's', title: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  SaveFiles(self, parent_window: 's', title: 's', options: 'a{sv}', /) -> 'o'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.DBus.Properties:
+ |
+ |  Get(self, interface_name: 's', property_name: 's', /) -> 'v'
+ |
+ |  GetAll(self, interface_name: 's', /) -> 'a{sv}'
+ |
+ |  Set(self, interface_name: 's', property_name: 's', value: 'v', /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from org.freedesktop.DBus.Properties:
+ |
+ |  PropertiesChanged
+ |      Signal. Callback: (s, a{sv}, as)
+ |
+ |  onPropertiesChanged
+ |      Assign a callback to subscribe to the signal. Assing None to unsubscribe. Callback: (s, a{sv}, as)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.DBus.Introspectable:
+ |
+ |  Introspect(self, /) -> 's'
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.DBus.Peer:
+ |
+ |  GetMachineId(self, /) -> 's'
+ |
+ |  Ping(self, /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from pydbus.prox{"format", "*"}y.ProxyObject:
+ |
+ |  __init__(self, bus, bus_name, path, object=None)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from pydbus.proxy.ProxyObject:
+ |
+ |  __dict__
+ |      dictionary for instance variables
+ |
+ |  __weakref__
+ |      list of weak references to the object

@@ -1,0 +1,15 @@
+# Computer vision
+OpenCV-Python
+Pillow
+
+# Input controll
+pyautogui
+keyboard
+
+# Dbus
+pydbus
+dbus-python
+
+# GNOME Objectss
+PyGObject
+pygobject-stubs
