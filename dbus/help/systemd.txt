@@ -1,0 +1,222 @@
+Help on <CompositeObject> object:
+
+class <CompositeObject>(org.freedesktop.systemd1.Manager, org.freedesktop.DBus.Peer, org.freedesktop.DBus.Introspectable, org.freedesktop.DBus.Properties)
+ |  <CompositeObject>(bus, bus_name, path, object=None)
+ |
+ |  Method resolution order:
+ |      <CompositeObject>
+ |      org.freedesktop.systemd1.Manager
+ |      org.freedesktop.DBus.Peer
+ |      org.freedesktop.DBus.Introspectable
+ |      org.freedesktop.DBus.Properties
+ |      pydbus.proxy.ProxyObject
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __getitem__(self, iface) from pydbus.proxy.CompositeInterface.<locals>.CompositeObject
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from org.freedesktop.systemd1.Manager:
+ |
+ |  AbandonScope(self, name: 's', /)
+ |
+ |  AddDependencyUnitFiles(
+ |      self,
+ |      files: 'as',
+ |      target: 's',
+ |      type: 's',
+ |      runtime: 'b',
+ |      force: 'b',
+ |      /
+ |  ) -> 'a(sss)'
+ |
+ |  AttachProcessesToUnit(self, unit_name: 's', subcgroup: 's', pids: 'au', /)
+ |
+ |  BindMountUnit(
+ |      self,
+ |      name: 's',
+ |      source: 's',
+ |      destination: 's',
+ |      read_only: 'b',
+ |      mkdir: 'b',
+ |      /
+ |  )
+ |
+ |  CancelJob(self, id: 'u', /)
+ |
+ |  CleanUnit(self, name: 's', mask: 'as', /)
+ |
+ |  ClearJobs(self, /)
+ |
+ |  DisableUnitFiles(self, files: 'as', runtime: 'b', /) -> 'a(sss)'
+ |
+ |  DisableUnitFilesWithFlags(self, files: 'as', flags: 't', /) -> 'a(sss)'
+ |
+ |  DisableUnitFilesWithFlagsAndInstallInfo(self, files: 'as', flags: 't', /) -> '(b, a(sss))'
+ |
+ |  Dump(self, /) -> 's'
+ |
+ |  DumpByFileDescriptor(self, /) -> 'h'
+ |
+ |  DumpUnitFileDescriptorStore(self, name: 's', /) -> 'a(suuutuusu)'
+ |
+ |  DumpUnitsMatchingPatterns(self, patterns: 'as', /) -> 's'
+ |
+ |  DumpUnitsMatchingPatternsByFileDescriptor(self, patterns: 'as', /) -> 'h'
+ |
+ |  EnableUnitFiles(self, files: 'as', runtime: 'b', force: 'b', /) -> '(b, a(sss))'
+ |
+ |  EnableUnitFilesWithFlags(self, files: 'as', flags: 't', /) -> '(b, a(sss))'
+ |
+ |  EnqueueMarkedJobs(self, /) -> 'ao'
+ |
+ |  EnqueueUnitJob(self, name: 's', job_type: 's', job_mode: 's', /) -> '(u, o, s, o, s, a(uosos))'
+ |
+ |  Exit(self, /)
+ |
+ |  FreezeUnit(self, name: 's', /)
+ |
+ |  GetDefaultTarget(self, /) -> 's'
+ |
+ |  GetDynamicUsers(self, /) -> 'a(us)'
+ |
+ |  GetJob(self, id: 'u', /) -> 'o'
+ |
+ |  GetJobAfter(self, id: 'u', /) -> 'a(usssoo)'
+ |
+ |  GetJobBefore(self, id: 'u', /) -> 'a(usssoo)'
+ |
+ |  GetUnit(self, name: 's', /) -> 'o'
+ |
+ |  GetUnitByControlGroup(self, cgroup: 's', /) -> 'o'
+ |
+ |  GetUnitByInvocationID(self, invocation_id: 'ay', /) -> 'o'
+ |
+ |  GetUnitByPID(self, pid: 'u', /) -> 'o'
+ |
+ |  GetUnitByPIDFD(self, pidfd: 'h', /) -> '(o, s, ay)'
+ |
+ |  GetUnitFileLinks(self, name: 's', runtime: 'b', /) -> 'as'
+ |
+ |  GetUnitFileState(self, file: 's', /) -> 's'
+ |
+ |  GetUnitProcesses(self, name: 's', /) -> 'a(sus)'
+ |
+ |  Halt(self, /)
+ |
+ |  KExec(self, /)
+ |
+ |  KillUnit(self, name: 's', whom: 's', signal: 'i', /)
+ |
+ |  LinkUnitFiles(self, files: 'as', runtime: 'b', force: 'b', /) -> 'a(sss)'
+ |
+ |  ListJobs(self, /) -> 'a(usssoo)'
+ |
+ |  ListUnitFiles(self, /) -> 'a(ss)'
+ |
+ |  ListUnitFilesByPatterns(self, states: 'as', patterns: 'as', /) -> 'a(ss)'
+ |
+ |  ListUnits(self, /) -> 'a(ssssssouso)'
+ |
+ |  ListUnitsByNames(self, names: 'as', /) -> 'a(ssssssouso)'
+ |
+ |  ListUnitsByPatterns(self, states: 'as', patterns: 'as', /) -> 'a(ssssssouso)'
+ |
+ |  ListUnitsFiltered(self, states: 'as', /) -> 'a(ssssssouso)'
+ |
+ |  LoadUnit(self, name: 's', /) -> 'o'
+ |
+ |  LookupDynamicUserByName(self, name: 's', /) -> 'u'
+ |
+ |  LookupDynamicUserByUID(self, uid: 'u', /) -> 's'
+ |
+ |  MaskUnitFiles(self, files: 'as', runtime: 'b', force: 'b', /) -> 'a(sss)'
+ |
+ |  MountImageUnit(
+ |      self,
+ |      name: 's',
+ |      source: 's',
+ |      destination: 's',
+ |      read_only: 'b',
+ |      mkdir: 'b',
+ |      options: 'a(ss)',
+ |      /
+ |  )
+ |
+ |  PowerOff(self, /)
+ |
+ |  PresetAllUnitFiles(self, mode: 's', runtime: 'b', force: 'b', /) -> 'a(sss)'
+ |
+ |  PresetUnitFiles(self, files: 'as', runtime: 'b', force: 'b', /) -> '(b, a(sss))'
+ |
+ |  PresetUnitFilesWithMode(
+ |      self,
+ |      files: 'as',
+ |      mode: 's',
+ |      runtime: 'b',
+ |      force: 'b',
+ |      /
+ |  ) -> '(b, a(sss))'
+ |
+ |  QueueSignalUnit(self, name: 's', whom: 's', signal: 'i', value: 'i', /)
+ |
+ |  Reboot(self, /)
+ |
+ |  ReenableUnitFiles(self, files: 'as', runtime: 'b', force: 'b', /) -> '(b, a(sss))'
+ |
+ |  Reexecute(self, /)
+ |
+ |  RefUnit(self, name: 's', /)
+ |
+ |  Reload(self, /)
+ |
+ |  ReloadOrRestartUnit(self, name: 's', mode: 's', /) -> 'o'
+ |
+ |  ReloadOrTryRestartUnit(self, name: 's', mode: 's', /) -> 'o'
+ |
+ |  ReloadUnit(self, name: 's', mode: 's', /) -> 'o'
+ |
+ |  ResetFailed(self, /)
+ |
+ |  ResetFailedUnit(self, name: 's', /)
+ |
+ |  RestartUnit(self, name: 's', mode: 's', /) -> 'o'
+ |
+ |  RevertUnitFiles(self, files: 'as', /) -> 'a(sss)'
+ |
+ |  SetDefaultTarget(self, name: 's', force: 'b', /) -> 'a(sss)'
+ |
+ |  SetEnvironment(self, assignments: 'as', /)
+ |
+ |  SetExitCode(self, number: 'y', /)
+ |
+ |  SetShowStatus(self, mode: 's', /)
+ |
+ |  SetUnitProperties(self, name: 's', runtime: 'b', properties: 'a(sv)', /)
+ |
+ |  SoftReboot(self, new_root: 's', /)
+ |
+ |  StartAuxiliaryScope(
+ |      self,
+ |      name: 's',
+ |      pidfds: 'ah',
+ |      flags: 't',
+ |      properties: 'a(sv)',
+ |      /
+ |  ) -> 'o'
+ |
+ |  StartTransientUnit(
+ |      self,
+ |      name: 's',
+ |      mode: 's',
+ |      properties: 'a(sv)',
+ |      aux: 'a(sa(sv))',
+ |      /
+ |  ) -> 'o'
+ |
+ |  StartUnit(self, name: 's', mode: 's', /) -> 'o'
+ |
+ |  StartUnitReplace(self, old_unit: 's', new_unit: 's', mode: 's', /) -> 'o'
+ |
+ |  StartUnitWithFlags(self, name: 's', mode: 's', flags: 
