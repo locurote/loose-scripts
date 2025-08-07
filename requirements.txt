@@ -13,6 +13,6 @@ dbus-python
 
 # GNOME Objectss
 PyGObject
-pygobject-stubs
+PyGObject-stubs
 
 pygame
