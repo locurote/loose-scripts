@@ -1,7 +1,7 @@
 import gi
 
 gi.require_version("Gst", "1.0")
-from gi.repository import Gst, GLib
+from gi.repository import Gst, GLib # type: ignore # noqa: E402
 
 
 def main():

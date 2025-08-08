@@ -8,8 +8,6 @@ just a loose collection of random scripts for personal use
 
 ## DBUS
 
-Bunch of scripts and resources to interact an learn about dbus
-
 ### commands
 
 some useful commands
@@ -40,5 +38,19 @@ list of some websites related to dbus
 
 ## GStream
 
+### commands
+
+some useful commands
+
+| command | description |
+| :------ | ----------- |
+| `gst-inspect-1.0 \| grep sink` | list of available sink elements |
+| `gst-launch-1.0` | used to launch a pipeline |
+
+### resources
+
+list of some websites related to GStream
+
 + [gstream docs](https://gstreamer.freedesktop.org/documentation/?gi-language=python#GstPipeline)
 + [python gst tutorial](https://github.com/gkralik/python-gst-tutorial)
++ [gstreamer completion for zsh](https://github.com/CraigCarey/gstreamer-tab)
